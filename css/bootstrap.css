@@ -1376,26 +1376,6 @@ th {
     box-sizing: border-box
 }
 
-:after,
-:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
-
-html {
-    font-size: 10px;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-}
-
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #fff
-}
-
 button,
 input,
 select,
@@ -1406,7 +1386,6 @@ textarea {
 }
 
 a {
-    color: #337ab7;
     text-decoration: none
 }
 
@@ -1499,13 +1478,7 @@ hr {
 .h3,
 .h4,
 .h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h6 {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
@@ -1591,21 +1564,6 @@ h6 small {
     font-size: 75%
 }
 
-.h1,
-h1 {
-    font-size: 36px
-}
-
-.h2,
-h2 {
-    font-size: 30px
-}
-
-.h3,
-h3 {
-    font-size: 24px
-}
-
 .h4,
 h4 {
     font-size: 18px
@@ -1619,10 +1577,6 @@ h5 {
 .h6,
 h6 {
     font-size: 12px
-}
-
-p {
-    margin: 0 0 10px
 }
 
 .lead {
@@ -2042,10 +1996,8 @@ pre code {
 .col-sm-1,
 .col-sm-10,
 .col-sm-11,
-.col-sm-12,
 .col-sm-2,
 .col-sm-3,
-.col-sm-4,
 .col-sm-5,
 .col-sm-6,
 .col-sm-7,
@@ -2065,8 +2017,18 @@ pre code {
 .col-xs-9 {
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+.col-sm-4{
+    margin-bottom: 30px;
+}
+
+.col-sm-12{
+    position: relative;
+    padding: 0;
 }
 
 .col-xs-1,
@@ -2328,7 +2290,7 @@ pre code {
         width: 41.66666667%
     }
     .col-sm-4 {
-        width: 33.33333333%
+        width: 33.33333333%;
     }
     .col-sm-3 {
         width: 25%
@@ -5075,11 +5037,11 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
 }
 
-@media (min-width:951px) {
+/* @media (min-width:951px) {
     .navbar-header {
         float: left
     }
-}
+} */
 
 .navbar-collapse {
     padding-right: 15px;
@@ -5095,7 +5057,11 @@ textarea.input-group-sm>.input-group-btn>.btn {
     overflow-y: auto
 }
 
-@media (min-width:950px) {
+@media (min-width:951px) {
+
+    .navbar-header {
+        float: left
+    }
     .navbar-collapse {
         width: auto;
         border-top: 0;
