@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     background: #FFF;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -339,7 +339,24 @@ li{
 }
 
 .nav li a{
+    position: relative;
     color: black;
+}
+
+.nav li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    transition: width 0.2s ease-in-out;
+    background-color: #000000;
+}
+
+.nav li a:hover::after{
+    width: 65%;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -349,7 +366,6 @@ li{
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
-    color: rgba(0, 0, 0, 0.758);
 }
 
 .navbar-toggle {
@@ -377,7 +393,7 @@ li{
     z-index: 2;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 950px) {
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -385,6 +401,7 @@ li{
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
+
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -666,8 +683,8 @@ a {
 }
 
 .container {
-    /* max-width: 1000px; */
-    width: 80%;
+    width: 100%;
+    max-width: 1900px;
 }
 
 .hero-bloc-text {
@@ -822,7 +839,7 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("../img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
@@ -838,9 +855,6 @@ h4 {
 }
 
 @media (max-width: 1024px) {
-    .container {
-        width: 100%;
-    }
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -851,15 +865,6 @@ h4 {
     .bloc-tile-4.full-width-bloc .container {
         padding-left: 0;
         padding-right: 0;
-    }
-}
-
-@media (max-width: 992px) and (min-width: 768px) {
-    .navbar .nav {
-        max-width: 80%
-    }
-    .nav-center.navbar .nav {
-        max-width: 100%
     }
 }
 
@@ -875,7 +880,7 @@ h4 {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 950px) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -883,10 +888,6 @@ h4 {
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
-    }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -896,12 +897,64 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
-}
 
-@media (max-width: 767px) {
+    .nav > li {
+        margin-top: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        background: rgba(0, 0, 0, .05);
+        text-align: left;
+        padding-left: 15px;
+        width: 100%;
+        margin: 0;
+    }
+    .nav > li:hover {
+        background: rgba(0, 0, 0, .08);
+    }
+
+    .nav li a::after{
+        display: none;
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        transition: width 0.2s ease-in-out;
+        background-color: #000000;
+    }
+
+    .navbar .nav {
+        padding-top: 0;
+        border-top: 1px solid rgba(0, 0, 0, .2);
+        float: none!important;
+    }
+    .navbar.row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navbar-brand img {
+        max-height: 40px;
+        width: auto;
+    }
+    .nav-invert .navbar-header {
+        float: none;
+        width: 100%;
+    }
+    .nav-invert .navbar-toggle {
+        float: left;
+        margin-left: 10px;
+    }
+
+    .navbar-collapse {
+        padding: 0;
+        overflow-x: hidden;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -920,31 +973,11 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .navbar .nav {
-        padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
-    }
-    .navbar.row {
-        margin-left: 0;
-        margin-right: 0;
-    }
     .site-navigation {
         position: inherit;
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
-    }
-    .nav > li {
-        margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
-        text-align: left;
-        padding-left: 15px;
-        width: 100%;
-    }
-    .nav > li:hover {
-        background: rgba(0, 0, 0, .08);
     }
     .dropdown .dropdown a .caret {
         float: none;
@@ -966,24 +999,6 @@ h4 {
     .hero-nav {
         left: -1px;
         right: -1px;
-    }
-    .navbar-collapse {
-        padding: 0;
-        overflow-x: hidden;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    .navbar-brand img {
-        max-height: 40px;
-        width: auto;
-    }
-    .nav-invert .navbar-header {
-        float: none;
-        width: 100%;
-    }
-    .nav-invert .navbar-toggle {
-        float: left;
-        margin-left: 10px;
     }
     .bloc {
         padding-left: 0;
@@ -1052,3 +1067,5 @@ h4 {
         text-align: center;
     }
 }
+
+/* Responsive */
