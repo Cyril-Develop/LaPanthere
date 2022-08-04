@@ -67,6 +67,13 @@ h3{
     padding:  50px;
 }
 
+.white{
+    color: white;
+    text-shadow: 0 2px 8px black;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-family: "helvetica";
+}
+
 .bloc-md {
     padding: 50px;
 }
@@ -234,6 +241,7 @@ h3{
     margin-right: 0;
     margin-left: 0;
 }
+
 
 .row.row-no-gutters > [class^="col-"],
 .row.row-no-gutters > [class*=" col-"] {
