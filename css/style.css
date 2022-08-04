@@ -30,6 +30,13 @@ li{
     list-style-type: none;
 }
 
+h3{
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
+    font-family: 'helvetica';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -409,7 +416,7 @@ nav .caret {
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    margin: 6px -5px 0 0!important;
+    margin: 6px -5px 0 0;
     float: right;
 }
 
@@ -454,7 +461,7 @@ nav .caret {
 }
 
 .icon-lg {
-    font-size: clamp(50px, 4vw, 100px);
+    font-size: clamp(50px, 5vw, 100px);
 }
 
 .sm-shadow {
@@ -652,12 +659,12 @@ a {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
 }
 
 .logo{
-    width: 60%;
+    width: 45%;
     box-shadow: 0 2px 8px rgb(0, 0, 0);
     background-color: #00000048;
     border-radius: 50%;
@@ -711,8 +718,12 @@ a {
 .black-background {
     padding: 40px;
     box-shadow: 0 2px 8px rgb(0, 0, 0);
-    background-color: #00000088;
-    color: white;
+    border-radius: 5px;
+    background-color: #000000ad;
+    background-color: #F3976C;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .bgc-white {
@@ -738,6 +749,16 @@ a {
 .bg-presentation {
     background-image: url("../img/image-de-presentation.bmp");
 }
+
+.title-h2{
+    margin: 0 auto;
+    max-width: 900px;
+    width: 90%;
+    margin-bottom: 30px;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-family: "helvetica";
+}
+
 
 @media (max-width: 1024px) {
     .bloc {
@@ -813,7 +834,8 @@ a {
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
+        /* float: none!important; */
+        float: none;
     }
     .navbar.row {
         margin-left: 0;
@@ -841,7 +863,7 @@ a {
     }
 
     .logo{
-        width: 45%;
+        width: 35%;
     }
 
     .page-container {
@@ -856,8 +878,8 @@ a {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -946,6 +968,7 @@ a {
     .black-background{
         padding: 10px;
     }
+
 }
 
 @media (max-width: 400px) {
