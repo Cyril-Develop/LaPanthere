@@ -235,11 +235,11 @@ th {
     *,
     :after,
     :before {
-        color: #000 !important;
-        text-shadow: none !important;
-        background: 0 0 !important;
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important
+        color: #000;;
+        text-shadow: none;;
+        background: 0 0;;
+        -webkit-box-shadow: none;;
+        box-shadow: none;
     }
     a,
     a:visited {
@@ -268,7 +268,7 @@ th {
         page-break-inside: avoid
     }
     img {
-        max-width: 100% !important
+        max-width: 100%;
     }
     h2,
     h3,
@@ -285,21 +285,21 @@ th {
     }
     .btn>.caret,
     .dropup>.btn>.caret {
-        border-top-color: #000 !important
+        border-top-color: #000;
     }
     .label {
         border: 1px solid #000
     }
     .table {
-        border-collapse: collapse !important
+        border-collapse: collapse;
     }
     .table td,
     .table th {
-        background-color: #fff !important
+        background-color: #fff;
     }
     .table-bordered td,
     .table-bordered th {
-        border: 1px solid #ddd !important
+        border: 1px solid #ddd;
     }
 }
 
@@ -1419,9 +1419,16 @@ img {
     object-fit: cover;
     object-position: center;
     margin: 0 auto;
-    max-width: 320px;
-    width: 95%;
+    width: 320px;
 }
+
+@media screen and (max-width: 768px) {
+    .img-responsive {
+        width: 90%;
+    }
+}
+
+
 
 .img-rounded {
     border-radius: 6px
@@ -1524,7 +1531,7 @@ h6 small {
 h1,
 h2,
 h3 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px
 }
 
@@ -2003,7 +2010,6 @@ pre code {
 .col-sm-2,
 .col-sm-3,
 .col-sm-5,
-.col-sm-6,
 .col-sm-7,
 .col-sm-8,
 .col-sm-9,
@@ -2020,9 +2026,13 @@ pre code {
 .col-xs-8,
 .col-xs-9 {
     position: relative;
-    min-height: 1px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 0 10px 10px;
+    
+}
+
+.col-sm-6{
+    margin: 0 10px;
+    padding: 0 0 10px;
 }
 
 .col-sm-4{
@@ -2289,7 +2299,8 @@ pre code {
         width: 58.33333333%
     }
     .col-sm-6 {
-        width: 50%;
+        width: 320px;
+        margin-bottom: 50px;
     }
     .col-sm-5 {
         width: 41.66666667%
@@ -5074,10 +5085,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
         box-shadow: none
     }
     .navbar-collapse.collapse {
-        display: block !important;
-        height: auto !important;
+        display: block;;
+        height: auto;;
         padding-bottom: 0;
-        overflow: visible !important
+        overflow: visible;
     }
     .navbar-collapse.in {
         overflow-y: visible
@@ -7129,7 +7140,7 @@ button.close {
 
 .modal-body {
     position: relative;
-    padding: 15px
+    padding: 15px;
 }
 
 .modal-footer {
@@ -7770,19 +7781,19 @@ button.close {
 }
 
 .pull-right {
-    float: right !important
+    float: right;
 }
 
 .pull-left {
-    float: left !important
+    float: left;
 }
 
 .hide {
-    display: none !important
+    display: none;
 }
 
 .show {
-    display: block !important
+    display: block;
 }
 
 .invisible {
@@ -7798,22 +7809,18 @@ button.close {
 }
 
 .hidden {
-    display: none !important
+    display: none;
 }
 
 .affix {
-    position: fixed
-}
-
-@-ms-viewport {
-    width: device-width
+    position: fixed;
 }
 
 .visible-lg,
 .visible-md,
 .visible-sm,
 .visible-xs {
-    display: none !important
+    display: none;
 }
 
 .visible-lg-block,
@@ -7828,221 +7835,227 @@ button.close {
 .visible-xs-block,
 .visible-xs-inline,
 .visible-xs-inline-block {
-    display: none !important
+    display: none;
 }
 
 @media (max-width:767px) {
     .visible-xs {
-        display: block !important
+        display: block;
     }
     table.visible-xs {
-        display: table !important
+        display: table;
     }
     tr.visible-xs {
-        display: table-row !important
+        display: table-row;
     }
     td.visible-xs,
     th.visible-xs {
-        display: table-cell !important
+        display: table-cell;
     }
 }
 
 @media (max-width:767px) {
     .visible-xs-block {
-        display: block !important
+        display: block ;
+    }
+
+    .col-sm-6{
+        width: 320px;
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
 }
 
 @media (max-width:767px) {
     .visible-xs-inline {
-        display: inline !important
+        display: inline;
     }
 }
 
 @media (max-width:767px) {
     .visible-xs-inline-block {
-        display: inline-block !important
+        display: inline-block;
     }
 }
 
 @media (min-width:768px) and (max-width:991px) {
     .visible-sm {
-        display: block !important
+        display: block;
     }
     table.visible-sm {
-        display: table !important
+        display: table;
     }
     tr.visible-sm {
-        display: table-row !important
+        display: table-row;
     }
     td.visible-sm,
     th.visible-sm {
-        display: table-cell !important
+        display: table-cell;
     }
 }
 
 @media (min-width:768px) and (max-width:991px) {
     .visible-sm-block {
-        display: block !important
+        display: block;
     }
 }
 
 @media (min-width:768px) and (max-width:991px) {
     .visible-sm-inline {
-        display: inline !important
+        display: inline;
     }
 }
 
 @media (min-width:768px) and (max-width:991px) {
     .visible-sm-inline-block {
-        display: inline-block !important
+        display: inline-block;
     }
 }
 
 @media (min-width:992px) and (max-width:1199px) {
     .visible-md {
-        display: block !important
+        display: block;
     }
     table.visible-md {
-        display: table !important
+        display: table;
     }
     tr.visible-md {
-        display: table-row !important
+        display: table-row;
     }
     td.visible-md,
     th.visible-md {
-        display: table-cell !important
+        display: table-cell;
     }
 }
 
 @media (min-width:992px) and (max-width:1199px) {
     .visible-md-block {
-        display: block !important
+        display: block;
     }
 }
 
 @media (min-width:992px) and (max-width:1199px) {
     .visible-md-inline {
-        display: inline !important
+        display: inline;
     }
 }
 
 @media (min-width:992px) and (max-width:1199px) {
     .visible-md-inline-block {
-        display: inline-block !important
+        display: inline-block;
     }
 }
 
 @media (min-width:1200px) {
     .visible-lg {
-        display: block !important
+        display: block;
     }
     table.visible-lg {
-        display: table !important
+        display: table;
     }
     tr.visible-lg {
-        display: table-row !important
+        display: table-row;
     }
     td.visible-lg,
     th.visible-lg {
-        display: table-cell !important
+        display: table-cell;
     }
 }
 
 @media (min-width:1200px) {
     .visible-lg-block {
-        display: block !important
+        display: block;
     }
 }
 
 @media (min-width:1200px) {
     .visible-lg-inline {
-        display: inline !important
+        display: inline;
     }
 }
 
 @media (min-width:1200px) {
     .visible-lg-inline-block {
-        display: inline-block !important
+        display: inline-block;
     }
 }
 
 @media (max-width:767px) {
     .hidden-xs {
-        display: none !important
+        display: none;
     }
 }
 
 @media (min-width:768px) and (max-width:991px) {
     .hidden-sm {
-        display: none !important
+        display: none;
     }
 }
 
 @media (min-width:992px) and (max-width:1199px) {
     .hidden-md {
-        display: none !important
+        display: none;
     }
 }
 
 @media (min-width:1200px) {
     .hidden-lg {
-        display: none !important
+        display: none;
     }
 }
 
 .visible-print {
-    display: none !important
+    display: none;
 }
 
 @media print {
     .visible-print {
-        display: block !important
+        display: block;
     }
     table.visible-print {
-        display: table !important
+        display: table;
     }
     tr.visible-print {
-        display: table-row !important
+        display: table-row;
     }
     td.visible-print,
     th.visible-print {
-        display: table-cell !important
+        display: table-cell;
     }
 }
 
 .visible-print-block {
-    display: none !important
+    display: none;
 }
 
 @media print {
     .visible-print-block {
-        display: block !important
+        display: block;
     }
 }
 
 .visible-print-inline {
-    display: none !important
+    display: none;
 }
 
 @media print {
     .visible-print-inline {
-        display: inline !important
+        display: inline;
     }
 }
 
 .visible-print-inline-block {
-    display: none !important
+    display: none;
 }
 
 @media print {
     .visible-print-inline-block {
-        display: inline-block !important
+        display: inline-block;
     }
 }
 
 @media print {
     .hidden-print {
-        display: none !important
+        display: none;
     }
 }
