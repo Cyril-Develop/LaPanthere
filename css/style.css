@@ -59,6 +59,7 @@ h3{
 }
 
 .bloc .container {
+    position: relative;
     padding-left: 0;
     padding-right: 0;
 }
@@ -105,9 +106,9 @@ h3{
     background-attachment: fixed;
 }
 
-.d-bloc {
+/* .d-bloc {
     color: rgba(255, 255, 255, .7);
-}
+} */
 
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
@@ -355,6 +356,7 @@ h3{
 }
 
 form{
+    margin: 40px 0;
     width: 50%;
 }
 
@@ -505,33 +507,41 @@ nav .caret {
 
 .form-control {
     border-color: rgba(0, 0, 0, .1);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    height: 50px;
     box-shadow: none;
 }
 
 .scrollToTop {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 20px;
     opacity: 1;
     z-index: 500;
+    border: none;
     transition: all .3s ease-in-out;
 }
 
-/* a[data-lightbox] {
+a[data-lightbox] {
     position: relative;
     display: block; 
     text-align: center;
+    background-color: #000000;
 }
 
 a[data-lightbox]:hover::before {
     content: "+";
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
     width: 50px;
     height: 50px;
-    margin-left: -25px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
     color: #FFF;
@@ -539,9 +549,9 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-} */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 a[data-lightbox]:hover img {
     opacity: 0.6;
@@ -555,7 +565,6 @@ a[data-lightbox]:hover img {
 }
 
 #lightbox-modal .modal-dialog {
-    width: 90%;
     max-width: 900px;
     margin: 0 auto 0;
 }
@@ -573,6 +582,7 @@ a[data-lightbox]:hover img {
     left: 15px;
     right: 15px;
     bottom: 5px;
+    text-align: center;
 }
 
 .close-lightbox {
@@ -624,24 +634,9 @@ a[data-lightbox]:hover img {
 
 .snapshot-lb .lightbox-caption {
     padding: 0;
-    color: rgba(0, 0, 0, .5);
+    color: rgb(0, 0, 0);
     background: none;
 }
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
-    /* font-family: "helvetica"; */
-    /* font-weight: 400; */
-    /* color: #575757!important; 
-} */
 
 .container {
     width: 100%;
@@ -1005,6 +1000,8 @@ label{
     }
     form {
         padding: 5px;
+        margin: 0;
+        width: 50%;
         width: 95%;
         margin-bottom: 50px;
     }
@@ -1028,6 +1025,11 @@ label{
         padding: 10px;
     }
 
+    .scrollToTop {
+        top: -50px;
+        border: 1px solid rgba(255, 255, 255, 0.473);
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -1035,6 +1037,11 @@ label{
         padding-left: 0;
         padding-right: 0;
     }
+
+    .lightbox-caption{
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 767px) {

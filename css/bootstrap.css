@@ -7866,6 +7866,10 @@ button.close {
         margin: 0 auto;
         margin-bottom: 50px;
     }
+
+    .col-sm-6 img{
+        width: 100%;  
+    }
 }
 
 @media (max-width:767px) {
