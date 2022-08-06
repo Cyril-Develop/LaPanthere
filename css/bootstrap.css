@@ -2037,6 +2037,8 @@ pre code {
 
 .col-sm-4{
     margin-bottom: 30px;
+    padding:0 10px;
+    text-align: justify;
 }
 
 .col-sm-12{
@@ -3205,7 +3207,7 @@ input[type=search] {
 .form-group {
     margin: 0 auto;
     width: 90%;
-    margin-bottom: 30px
+    margin-bottom: 55px
 }
 
 .checkbox,
@@ -5192,6 +5194,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     .navbar>.container-fluid .navbar-brand {
         margin-left: -15px
     }
+
 }
 
 .navbar-toggle {
@@ -5239,6 +5242,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 @media (max-width:767px) {
+
     .navbar-nav .open .dropdown-menu {
         position: static;
         float: none;
