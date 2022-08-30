@@ -8,9 +8,11 @@
 
 
 
-![screenshot du site](img/screenshotSite.jpg) 
+![screenshot du site](img/screenshot/openClassRooms.png) 
 
+![screenshot du site](img/screenshot/accueil.jpg) 
 
+![screenshot du site](img/screenshot/contact.jpg) 
 
 ## Technologies :
 - HTML
