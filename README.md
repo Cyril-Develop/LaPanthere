@@ -1,14 +1,11 @@
-![formation](./img/openClassRooms.png)
+![formation](./img/screenshot/openClassRooms.png)
 
 # Formation développeur web 
 
 
 
-## Projet 4: La Panthère
+## 📎 Projet 4: La Panthère
 
-
-
-![screenshot du site](img/screenshot/openClassRooms.png) 
 
 ![screenshot du site](img/screenshot/accueil.jpg) 
 
