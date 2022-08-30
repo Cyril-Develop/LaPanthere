@@ -4,7 +4,7 @@
 
 
 
-## 📎 Projet 4: La Panthère
+## 📎 Projet 4 : La Panthère
 
 
 ![screenshot du site](img/screenshot/accueil.jpg) 
