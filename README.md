@@ -4,7 +4,7 @@
 
 
 
-## 📎 Projet 4 : La Panthère
+## 📎 Projet 4 : La Panthère - Optimisez un site web existant
 
 
 ![screenshot du site](img/screenshot/accueil.jpg) 
